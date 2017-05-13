@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#1A237E</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:editTextColor">#FFFFFF</item>
+    </style>
+
+    <!-- Custom textSize for NumberPicker items. -->
+    <style name="PickersTheme" parent="AppTheme">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Custom color of loading animation. -->
+    <style name="LoadingTheme" parent="AppTheme">
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="DrawerButton" parent="MaterialDrawerTheme">
+        <item name="material_drawer_primary_icon">#FFFFFF</item>
+    </style>
+
+    <style name="TextStyleSubject" parent="AppTheme">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyleOtherItems" parent="AppTheme">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+</resources>
