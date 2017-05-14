@@ -3,8 +3,8 @@ Android app for students of the Belarusian State Economic University.
 At that moment the app shows information for the current day only.
 
 Known issues:
-  * Slow download of schedule
-  * Errors with parsing schedules of some faculties
+  * Slow speed of downloading.
+  * Errors with parsing schedules of some faculties.
   * Wrong algorithm of splitting strings.
 
 Screenshots:
