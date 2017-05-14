@@ -13,9 +13,12 @@ import com.artoymdmitriev.bseuschedulemk3.logic.CustomScheduleInfo;
 import com.artoymdmitriev.bseuschedulemk3.logic.DBHelper;
 import com.artoymdmitriev.bseuschedulemk3.logic.DBHelperSchedule;
 import com.artoymdmitriev.bseuschedulemk3.logic.DateCalc;
+import com.mikepenz.materialdrawer.AccountHeader;
+import com.mikepenz.materialdrawer.AccountHeaderBuilder;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
+import com.mikepenz.materialdrawer.model.ProfileDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.scheduleparser.parser.NormalItem;
 
@@ -41,9 +44,14 @@ public class FullSchedule extends AppCompatActivity {
         toolbar.setTitleTextColor(getResources().getColor(R.color.md_white_1000));
 
 
+        AccountHeader headerResult = new AccountHeaderBuilder()
+                .withActivity(this)
+                .withHeaderBackground(R.drawable.bseu_profile_pic)
+                .build();
         //setting up action drawer
         DrawerBuilder drawerBuilder = new DrawerBuilder();
         Drawer result = drawerBuilder
+                .withAccountHeader(headerResult)
                 .withActivity(this)
                 .withToolbar(toolbar)
                 .withDisplayBelowStatusBar(true)
