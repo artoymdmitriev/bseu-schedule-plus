@@ -62,7 +62,7 @@ public class FullSchedule extends AppCompatActivity {
         DBHelper dbHelper = new DBHelper(this);
         ArrayList<CustomScheduleInfo> arrayList = (ArrayList<CustomScheduleInfo>) dbHelper.getAllScheduleInfo();
         for (CustomScheduleInfo customScheduleInfo : arrayList) {
-            result.addItem(new PrimaryDrawerItem().withName(customScheduleInfo.getGroupName())
+            result.addItem(new PrimaryDrawerItem().withIcon(R.drawable.calendar).withName(customScheduleInfo.getGroupName())
                     .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                         @Override
                         public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
