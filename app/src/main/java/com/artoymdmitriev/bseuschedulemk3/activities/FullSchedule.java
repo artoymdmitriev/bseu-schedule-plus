@@ -73,8 +73,8 @@ public class FullSchedule extends AppCompatActivity {
                         }
                     }));
         }
-        result.addItem(new PrimaryDrawerItem().withName("Загрузить расписание").withIcon(android.R.drawable.stat_sys_download).
-                withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
+        result.addItem(new PrimaryDrawerItem().withName("Загрузить расписание").withIcon(R.drawable.download)
+                .withOnDrawerItemClickListener(new Drawer.OnDrawerItemClickListener() {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         startDownloadActivity();
